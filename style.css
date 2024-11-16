@@ -80,7 +80,7 @@ nav a {
 }
 
 /* product section */
-#produuct h2 {
+#product h2 {
     padding: 40px 0 0 40px;
 }
 
@@ -97,8 +97,8 @@ nav a {
     margin: 20px;
 }
 
-.product-img {
-    width: auto;
+.product img {
+    width: 200px;
     height: auto;
     border-radius: 10px;
 }
@@ -110,9 +110,9 @@ nav a {
     text-align: center;
 }
 
-.testimonial {
+.testimonials {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .testimonial {
@@ -136,7 +136,8 @@ form input,
 form textarea {
     width: 100px;
     max-width: 700px;
-    margin: 10px;
+    display: block;
+    margin: 0 auto;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #CCC
@@ -146,7 +147,7 @@ button {
     padding: 10px 20px;
     background-color: bisque;
     color: black;
-    bottom: none;
+    border: none;
     cursor: pointer;
 }
 
@@ -163,50 +164,10 @@ footer p {
 }
 
 .social-icons {
-    margin-bottom: 40px;
-}
-
-.social-icons a.img {
-    width: 20px;
-    margin: 0 10px;
-}
-
-/* media quaris untuk responn */
-@media (max-width : 768px) {
-    nav ul {
-        display: none;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-    .btn-order {
-        margin-top: 10px;
-    
-    }
-
-    #hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-    .btn-primary {
     margin-bottom: 10px;
-    }
-    #product h2 {
-        text-align: center;
-    }
+}
 
-    .product-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .testimonial {
-        flex-direction: column;
-        margin: auto;
-    }
+.social-icons a img {
+    width: 30px;
+    margin: 0 10px;
 }
